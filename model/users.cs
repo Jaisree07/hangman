@@ -36,12 +36,14 @@ namespace Model
                 HangmanView.DisplayHangman(3-attemptsLeft);
                 if (correctGuesses.Count==word.Length)
                 {
+                    Console.Beep(800, 400);
                     HangmanView.ShowMessage("Congratulations!You won!!","green");
                     HangmanView.ShowMessage("\nThe word was: " + word,"green");
                     break;
                 }
                 if (attemptsLeft<=0)
                 {
+                    Console.Beep(800, 400);
                     HangmanView.ShowMessage("You lost!!","red");
                     HangmanView.ShowMessage("The word was: " + word,"red");
                     break;

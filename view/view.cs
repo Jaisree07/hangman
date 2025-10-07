@@ -25,32 +25,39 @@ namespace View
             switch (wrongCount)
             {
                 case 1:
-                    Console.WriteLine("  |");
-                    Console.WriteLine("  |");
-                    Console.WriteLine("  |");
-                    Console.WriteLine("  |");
-                    Console.WriteLine("  |");
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("|");
+                    Console.WriteLine("|");
+                    Console.WriteLine("|");
+                    Console.WriteLine("|");
+                    Console.WriteLine("|");
+                    Console.WriteLine("|");
                     Console.WriteLine("=========");
+                    Console.ResetColor();
                     break;
 
                 case 2:
-                    Console.WriteLine("  +---+");
-                    Console.WriteLine("  |   |");
-                    Console.WriteLine("  |");
-                    Console.WriteLine("  |");
-                    Console.WriteLine("  |");
-                    Console.WriteLine("  |");
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("+---+");
+                    Console.WriteLine("|   |");
+                    Console.WriteLine("|");
+                    Console.WriteLine("|");
+                    Console.WriteLine("|");
+                    Console.WriteLine("|");
                     Console.WriteLine("=========");
+                    Console.ResetColor();
                     break;
 
                 case 3:
-                    Console.WriteLine("  +---+");
-                    Console.WriteLine("  |   |");
-                    Console.WriteLine("  O   |");
-                    Console.WriteLine(" /|\\  |");
-                    Console.WriteLine(" / \\  |");
-                    Console.WriteLine("      |");
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("+---+");
+                    Console.WriteLine("|   |");
+                    Console.WriteLine("|   O");
+                    Console.WriteLine("|  /|\\");
+                    Console.WriteLine("|  / \\");
+                    Console.WriteLine("|");
                     Console.WriteLine("=========");
+                    Console.ResetColor();
                     break;
             }
         }
